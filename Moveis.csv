@@ -1,0 +1,17 @@
+CREATE TABLE LatestMovies (
+    MovieID INT PRIMARY KEY,
+    Title VARCHAR(100),
+    ReleaseYear INT,
+    Genre VARCHAR(50),
+    Rating DECIMAL(3,1),
+    BoxOffice BIGINT
+);
+
+INSERT INTO LatestMovies (MovieID, Title, ReleaseYear, Genre, Rating, BoxOffice) VALUES
+(1, 'Oppenheimer', 2023, 'Drama', 8.6, 950000000),
+(2, 'Barbie', 2023, 'Comedy', 7.2, 1400000000),
+(3, 'Guardians of the Galaxy Vol. 3', 2023, 'Action', 8.0, 845000000),
+(4, 'Spider-Man: Across the Spider-Verse', 2023, 'Animation', 8.7, 690000000),
+(5, 'John Wick: Chapter 4', 2023, 'Action', 7.8, 430000000);
+
+select * from LatestMovies
